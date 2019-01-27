@@ -58,7 +58,7 @@ impl Decoder for IPv6Decoder {
 }
 
 #[derive(Default, Package)]
-struct IPv6Package {
+struct DefaultPackage {
     #[decoder(id = "app.genet.decoder.ipv6")]
     decoder: IPv6Decoder,
 }

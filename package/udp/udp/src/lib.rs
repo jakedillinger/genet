@@ -28,7 +28,7 @@ impl Decoder for UdpDecoder {
 }
 
 #[derive(Default, Package)]
-struct UdpPackage {
+struct DefaultPackage {
     #[decoder(id = "app.genet.decoder.udp")]
     decoder: UdpDecoder,
 }

@@ -90,7 +90,7 @@ impl Decoder for EthDecoder {
 }
 
 #[derive(Default, Package)]
-pub struct EthPackage {
+struct DefaultPackage {
     #[decoder(id = "app.genet.decoder.eth")]
     decoder: EthDecoder,
 }

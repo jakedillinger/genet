@@ -187,7 +187,7 @@ impl From<u8> for Mode {
 }
 
 #[derive(Default, Package)]
-struct NtpPackage {
-    #[decoder(id = "app.genet.decoder.ntp", after("app.genet.decoder.udp"))]
+struct DefaultPackage {
+    #[decoder(id = "app.genet.decoder.ntp", trigger_after("app.genet.decoder.udp"))]
     decoder: NtpDecoder,
 }

@@ -31,7 +31,7 @@ impl Decoder for PcapLayerDecoder {
 }
 
 #[derive(Default, Package)]
-struct PcapLayerPackage {
+struct DefaultPackage {
     #[decoder(id = "app.genet.decoder.pcap_layer")]
     decoder: PcapLayerDecoder,
 }

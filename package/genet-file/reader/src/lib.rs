@@ -30,7 +30,7 @@ impl Reader for GenetFileReader {
 }
 
 #[derive(Default, Package)]
-struct GenetFilePackage {
+struct DefaultPackage {
     #[reader(
         id = "app.genet.reader.genet-file",
         filter(name = "genet", ext = "genet")
