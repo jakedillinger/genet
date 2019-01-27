@@ -1,6 +1,6 @@
 [workspace]
 exclude = ["package"]
-members = ["genet-kernel", "genet-filter", "genet-sdk", "genet-derive", "genet-abi", "genet-napi", "genet-binding"]
+members = ["genet-kernel", "genet-filter", "genet-sdk", "genet-derive", "genet-abi", "genet-napi", "genet-binding", "genet-cli"]
 
 [replace]
 "genet-abi:0.5.0" = { path = "./genet-abi" }
