@@ -102,6 +102,10 @@ impl Profile {
         ctx
     }
 
+    pub fn register_component(&mut self, comp: Component) {
+        self.components.push(comp);
+    }
+
     pub fn load_library(&mut self, path: &str) -> Result<(), Error> {
         let lib = Library::new(path)?;
 
