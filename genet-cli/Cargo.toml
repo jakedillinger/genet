@@ -22,6 +22,8 @@ genet-kernel = { path = "../genet-kernel" }
 genet-sdk = { path = "../genet-sdk" }
 ipv4 = { path = "../package/ipv4/ipv4" }
 ipv6 = { path = "../package/ipv6/ipv6" }
+rust-flatten-json = "0.1"
+serde_json = "1.0"
 term_grid = "0.1"
 
 [build-dependencies]
