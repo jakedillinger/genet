@@ -4,6 +4,13 @@ version = "0.1.0"
 authors = ["Ron Hashimoto <mail@h2so5.net>"]
 edition = "2018"
 
+[package.metadata]
+packages = [
+    "eth",
+    "ipv4",
+    "ipv6"
+]
+
 [[bin]]
 name = "genet"
 path = "src/main.rs"
@@ -12,5 +19,11 @@ path = "src/main.rs"
 clap = "2"
 eth = { path = "../package/eth/eth" }
 genet-kernel = { path = "../genet-kernel" }
+genet-sdk = { path = "../genet-sdk" }
 ipv4 = { path = "../package/ipv4/ipv4" }
 ipv6 = { path = "../package/ipv6/ipv6" }
+
+[build-dependencies]
+serde = "1"
+serde_derive = "1"
+toml = "0.4"

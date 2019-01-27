@@ -27,7 +27,7 @@ impl Reader for TestReader {
 }
 
 #[derive(Default, Package)]
-struct DefaultPackage {
+pub struct DefaultPackage {
     #[reader(id = "app.genet.reader.test-input")]
     reader: TestReader,
 }

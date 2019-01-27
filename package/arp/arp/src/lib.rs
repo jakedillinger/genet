@@ -53,7 +53,7 @@ impl Decoder for ArpDecoder {
 }
 
 #[derive(Default, Package)]
-struct DefaultPackage {
+pub struct DefaultPackage {
     #[decoder(id = "app.genet.decoder.arp")]
     decoder: ArpDecoder,
 }

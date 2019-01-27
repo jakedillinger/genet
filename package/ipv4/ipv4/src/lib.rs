@@ -39,7 +39,7 @@ impl Decoder for IPv4Decoder {
 }
 
 #[derive(Default, Package)]
-struct DefaultPackage {
+pub struct DefaultPackage {
     #[decoder(id = "app.genet.decoder.ipv4")]
     decoder: IPv4Decoder,
 }

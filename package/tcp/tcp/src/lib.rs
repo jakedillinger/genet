@@ -67,7 +67,7 @@ impl Decoder for TcpDecoder {
 }
 
 #[derive(Default, Package)]
-struct DefaultPackage {
+pub struct DefaultPackage {
     #[decoder(id = "app.genet.decoder.tcp")]
     decoder: TcpDecoder,
 }

@@ -102,8 +102,8 @@ impl Profile {
         ctx
     }
 
-    pub fn register_component(&mut self, comp: Component) {
-        self.components.push(comp);
+    pub fn register_package(&mut self, pkg: Package) {
+        self.packages.push(pkg);
     }
 
     pub fn load_library(&mut self, path: &str) -> Result<(), Error> {
